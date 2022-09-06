@@ -62,7 +62,7 @@
    <string name="after_upgrade">More later</string>
    <string name="after_upgrade_down">download later</string>
    <string name="again_exit">Press again to exit</string>
-   <string name="aggree_milletr">I have agreed to accept Xiaomi's</string>
+   <string name="aggree_milletr">I have agreed to accept Xiaomi\'s</string>
    <string name="agree">Agree</string>
    <string name="agreement_privacy">Privacy Policy</string>
    <string name="agreement_protocol">User Agreement</string>
@@ -583,7 +583,7 @@ Fly with less distraction"</string>
    <string name="horizontalcalicom">Horizontal calibration complete</string>
    <string name="hot_answer">Recent Questions and Answers</string>
    <string name="ignore">ignore</string>
-   <string name="ignoreflytip">Don't remind again</string>
+   <string name="ignoreflytip">Don\'t remind again</string>
    <string name="image_format">Photo format</string>
    <string name="image_jpg">JPG</string>
    <string name="image_raw">JPG+RAW (only JPG is saved when taking pictures)</string>
@@ -813,7 +813,7 @@ Simple and convenient"</string>
    <string name="new_hand_five_tip_two">Push the right stick to the left, the aircraft will fly to the left, push the right stick to the right, and the aircraft will fly to the right</string>
    <string name="new_hand_four_tip_one">Push the left stick forward, the aircraft altitude will rise, pull the left stick backward, the aircraft altitude will drop</string>
    <string name="new_hand_four_tip_two">Push the left stick to the left, the nose will turn to the left, push the left stick to the right, the nose will turn to the right</string>
-   <string name="new_hand_guide">Beginner's Guide</string>
+   <string name="new_hand_guide">Beginner\'s Guide</string>
    <string name="new_hand_isfinish">Learn before, have you learned it now?</string>
    <string name="new_hand_mode">Novice Mode</string>
    <string name="new_hand_next">Next</string>
