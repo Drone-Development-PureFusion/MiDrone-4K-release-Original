@@ -723,7 +723,7 @@ and away from the crowd"</string>
    <string name="login_forget_password">Forgot password</string>
    <string name="login_hint_input_verification">Please enter verification code</string>
    <string name="login_hint_iphone">Please enter mobile number</string>
-   <string name="login_input_password">Please enter password</string>
+   <string name="login_inpput_password">Please enter password</string>
    <string name="login_input_email_account">Please enter an email account</string>
    <string name="login_input_new_password">Please enter your new password</string>
    <string name="login_input_new_password_again">Please confirm your new password again</string>

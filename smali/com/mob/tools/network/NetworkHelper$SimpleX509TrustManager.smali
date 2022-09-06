@@ -116,67 +116,87 @@
 
 # virtual methods
 .method public checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+    # inserted by apk-mitm to disable certificate pinning
     .locals 0
-
     return-void
+
+    # commented out by apk-mitm to disable old method body
+    #
+    # .locals 0
+    #
+    # return-void
 .end method
 
 .method public checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
-    .locals 2
-
-    if-nez p1, :cond_0
-
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const-string v1, "there were no certificates."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_0
-    array-length v0, p1
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_1
-
-    const/4 v0, 0x0
-
-    aget-object v0, p1, v0
-
-    invoke-virtual {v0}, Ljava/security/cert/X509Certificate;->checkValidity()V
-
-    :goto_0
+    # inserted by apk-mitm to disable certificate pinning
+    .locals 0
     return-void
 
-    :cond_1
-    iget-object v0, p0, Lcom/mob/tools/network/NetworkHelper$SimpleX509TrustManager;->standardTrustManager:Ljavax/net/ssl/X509TrustManager;
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/mob/tools/network/NetworkHelper$SimpleX509TrustManager;->standardTrustManager:Ljavax/net/ssl/X509TrustManager;
-
-    invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_2
-    new-instance v0, Ljava/security/cert/CertificateException;
-
-    const-string v1, "there were one more certificates but no trust manager found."
-
-    invoke-direct {v0, v1}, Ljava/security/cert/CertificateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    # commented out by apk-mitm to disable old method body
+    #
+    # .locals 2
+    #
+    # if-nez p1, :cond_0
+    #
+    # new-instance v0, Ljava/lang/IllegalArgumentException;
+    #
+    # const-string v1, "there were no certificates."
+    #
+    # invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    #
+    # throw v0
+    #
+    # :cond_0
+    # array-length v0, p1
+    #
+    # const/4 v1, 0x1
+    #
+    # if-ne v0, v1, :cond_1
+    #
+    # const/4 v0, 0x0
+    #
+    # aget-object v0, p1, v0
+    #
+    # invoke-virtual {v0}, Ljava/security/cert/X509Certificate;->checkValidity()V
+    #
+    # :goto_0
+    # return-void
+    #
+    # :cond_1
+    # iget-object v0, p0, Lcom/mob/tools/network/NetworkHelper$SimpleX509TrustManager;->standardTrustManager:Ljavax/net/ssl/X509TrustManager;
+    #
+    # if-eqz v0, :cond_2
+    #
+    # iget-object v0, p0, Lcom/mob/tools/network/NetworkHelper$SimpleX509TrustManager;->standardTrustManager:Ljavax/net/ssl/X509TrustManager;
+    #
+    # invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+    #
+    # goto :goto_0
+    #
+    # :cond_2
+    # new-instance v0, Ljava/security/cert/CertificateException;
+    #
+    # const-string v1, "there were one more certificates but no trust manager found."
+    #
+    # invoke-direct {v0, v1}, Ljava/security/cert/CertificateException;-><init>(Ljava/lang/String;)V
+    #
+    # throw v0
 .end method
 
 .method public getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
+    # inserted by apk-mitm to disable certificate pinning
     .locals 1
-
     const/4 v0, 0x0
-
     new-array v0, v0, [Ljava/security/cert/X509Certificate;
-
     return-object v0
+
+    # commented out by apk-mitm to disable old method body
+    #
+    # .locals 1
+    #
+    # const/4 v0, 0x0
+    #
+    # new-array v0, v0, [Ljava/security/cert/X509Certificate;
+    #
+    # return-object v0
 .end method

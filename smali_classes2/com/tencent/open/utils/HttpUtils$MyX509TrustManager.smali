@@ -173,51 +173,71 @@
 
 # virtual methods
 .method public checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
-    .locals 1
-
-    :try_start_0
-    iget-object v0, p0, Lcom/tencent/open/utils/HttpUtils$MyX509TrustManager;->a:Ljavax/net/ssl/X509TrustManager;
-
-    invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/security/cert/CertificateException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :goto_0
+    # inserted by apk-mitm to disable certificate pinning
+    .locals 0
     return-void
 
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
+    # commented out by apk-mitm to disable old method body
+    #
+    # .locals 1
+    #
+    # :try_start_0
+    # iget-object v0, p0, Lcom/tencent/open/utils/HttpUtils$MyX509TrustManager;->a:Ljavax/net/ssl/X509TrustManager;
+    #
+    # invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+    # :try_end_0
+    # .catch Ljava/security/cert/CertificateException; {:try_start_0 .. :try_end_0} :catch_0
+    #
+    # :goto_0
+    # return-void
+    #
+    # :catch_0
+    # move-exception v0
+    #
+    # goto :goto_0
 .end method
 
 .method public checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
-    .locals 1
-
-    :try_start_0
-    iget-object v0, p0, Lcom/tencent/open/utils/HttpUtils$MyX509TrustManager;->a:Ljavax/net/ssl/X509TrustManager;
-
-    invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/security/cert/CertificateException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :goto_0
+    # inserted by apk-mitm to disable certificate pinning
+    .locals 0
     return-void
 
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
+    # commented out by apk-mitm to disable old method body
+    #
+    # .locals 1
+    #
+    # :try_start_0
+    # iget-object v0, p0, Lcom/tencent/open/utils/HttpUtils$MyX509TrustManager;->a:Ljavax/net/ssl/X509TrustManager;
+    #
+    # invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+    # :try_end_0
+    # .catch Ljava/security/cert/CertificateException; {:try_start_0 .. :try_end_0} :catch_0
+    #
+    # :goto_0
+    # return-void
+    #
+    # :catch_0
+    # move-exception v0
+    #
+    # goto :goto_0
 .end method
 
 .method public getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
+    # inserted by apk-mitm to disable certificate pinning
     .locals 1
-
-    iget-object v0, p0, Lcom/tencent/open/utils/HttpUtils$MyX509TrustManager;->a:Ljavax/net/ssl/X509TrustManager;
-
-    invoke-interface {v0}, Ljavax/net/ssl/X509TrustManager;->getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
-
-    move-result-object v0
-
+    const/4 v0, 0x0
+    new-array v0, v0, [Ljava/security/cert/X509Certificate;
     return-object v0
+
+    # commented out by apk-mitm to disable old method body
+    #
+    # .locals 1
+    #
+    # iget-object v0, p0, Lcom/tencent/open/utils/HttpUtils$MyX509TrustManager;->a:Ljavax/net/ssl/X509TrustManager;
+    #
+    # invoke-interface {v0}, Ljavax/net/ssl/X509TrustManager;->getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
+    #
+    # move-result-object v0
+    #
+    # return-object v0
 .end method
