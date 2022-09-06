@@ -1,0 +1,41 @@
+package org.p287b.p288a;
+
+import org.p287b.AbstractC5412b;
+import org.p287b.AbstractC5425g;
+import org.p287b.AbstractC5428i;
+import org.p287b.AbstractC5430k;
+/* renamed from: org.b.a.m */
+/* loaded from: classes.dex */
+public class C5406m<T> extends AbstractC5412b<T> {
+
+    /* renamed from: a */
+    private final T f22484a;
+
+    public C5406m(T t) {
+        this.f22484a = t;
+    }
+
+    @AbstractC5428i
+    /* renamed from: b */
+    public static <T> AbstractC5430k<T> m1151b(T t) {
+        return new C5406m(t);
+    }
+
+    @AbstractC5428i
+    /* renamed from: c */
+    public static <T> AbstractC5430k<T> m1150c(T t) {
+        return new C5406m(t);
+    }
+
+    @Override // org.p287b.AbstractC5432m
+    /* renamed from: a */
+    public void mo905a(AbstractC5425g abstractC5425g) {
+        abstractC5425g.mo1086a("sameInstance(").mo1087a(this.f22484a).mo1086a(")");
+    }
+
+    @Override // org.p287b.AbstractC5430k
+    /* renamed from: a */
+    public boolean mo900a(Object obj) {
+        return obj == this.f22484a;
+    }
+}

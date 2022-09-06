@@ -1,0 +1,33 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: MiDrone-4K-release.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- assets/insurance.js
+- png
+- jpg
+- ogg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '23'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  LICENSE-junit.txt: '8'
+  miui_push_version: '8'
+  push_version: '8'
+  it/sauronsoftware/ftp4j/extrecognizers/textualexts: '8'
+  junit/runner/logo.gif: '8'
+  junit/runner/smalllogo.gif: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.1
+versionInfo:
+  versionCode: '367'
+  versionName: V 3.1.67.1
