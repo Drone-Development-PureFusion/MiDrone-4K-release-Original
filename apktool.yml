@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: MiDrone-4K-release.apk
+apkFileName: MiDrone-4K-v3.1.67.1-PFv1.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -30,4 +30,4 @@ usesFramework:
 version: 2.6.1
 versionInfo:
   versionCode: '367'
-  versionName: V 3.1.67.1
+  versionName: V 3.1.67.1-PFv1

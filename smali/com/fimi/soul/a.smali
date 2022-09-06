@@ -13,7 +13,7 @@
 
 .field public static final e:I = 0x16f
 
-.field public static final f:Ljava/lang/String; = "V 3.1.67.1"
+.field public static final f:Ljava/lang/String; = "V 3.1.67.1-PFv1"
 
 
 # direct methods
