@@ -16,13 +16,6 @@ sdkInfo:
   targetSdkVersion: '23'
 sharedLibrary: false
 sparseResources: false
-unknownFiles:
-  LICENSE-junit.txt: '8'
-  miui_push_version: '8'
-  push_version: '8'
-  it/sauronsoftware/ftp4j/extrecognizers/textualexts: '8'
-  junit/runner/logo.gif: '8'
-  junit/runner/smalllogo.gif: '8'
 usesFramework:
   ids:
   - 1
